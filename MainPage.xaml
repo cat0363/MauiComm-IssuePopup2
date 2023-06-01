@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiComm_IssuePopup2.MainPage">
+
+    <ScrollView x:Name="svTestItems" Orientation="Vertical" Scrolled="svTestItems_Scrolled">
+        <StackLayout x:Name="slTestItems" Orientation="Vertical" >
+            <BindableLayout.ItemTemplate>
+                <DataTemplate>
+                    <Grid HeightRequest="44">
+                        <Label Text="{Binding ItemName}" FontSize="20" TextColor="Black" />
+                    </Grid>
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
